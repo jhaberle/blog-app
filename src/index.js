@@ -3,7 +3,13 @@ import ReactDOM from "react-dom";
 import CommentDetail from "./CommentDetail";
 
 const App = () => {
-  return <CommentDetail />;
+  return (
+    <div className="ui container comments">
+      <CommentDetail author="Sam" />
+      <CommentDetail author="Taylor" />
+      <CommentDetail author="Jason" />
+    </div>
+  );
 };
 
 ReactDOM.render(<App />, document.querySelector("#root"));
